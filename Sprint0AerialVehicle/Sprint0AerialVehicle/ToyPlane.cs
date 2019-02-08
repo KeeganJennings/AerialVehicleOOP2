@@ -41,7 +41,7 @@ namespace Sprint0AerialVehicle
         {
             if(isWoundUp)
             {
-                
+                StartEngine();
             }
         }
 
