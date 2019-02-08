@@ -12,37 +12,58 @@ namespace Sprint0AerialVehicle
 
         public ToyPlane()
         {
-
+            MaxAltitude = 50;
+            isWoundUp = false;
         }
 
         public string About()
         {
+            string aboutString = "";
 
+            aboutString = "This " + this + " has a max altitude of " + MaxAltitude + " ft. \nIt's current altitude is " + CurrentAltitude + " ft. \n";
+
+            return aboutString;
         }
 
         public string getWindUpString()
         {
-
+            if(isWoundUp)
+            {
+                return this + " is wound up";
+            }
+            else
+            {
+                return this + " is not wound up";
+            }
         }
 
         public void StartEngine()
         {
-
+            if(isWoundUp)
+            {
+                
+            }
         }
 
         public string TakeOff()
         {
+            string returnTakeOff = "";
+            if (isWoundUp != true)
+            {
+                returnTakeOff = this + " cannot take off because it's engine is not started";
+            }
 
+            return returnTakeOff;
         }
 
         public void UnWind()
         {
-
+            isWoundUp = false;
         }
 
         public void WindUp()
         {
-
+            isWoundUp = true;
         }
     }
 }

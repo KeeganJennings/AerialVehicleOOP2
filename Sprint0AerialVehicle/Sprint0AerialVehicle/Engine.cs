@@ -12,7 +12,7 @@ namespace Sprint0AerialVehicle
 
         public Engine()
         {
-
+            isStarted = false;
         }
 
         public void About()
@@ -22,12 +22,12 @@ namespace Sprint0AerialVehicle
 
         public void Start()
         {
-
+            isStarted = true;
         }
 
         public void Stop()
         {
-
+            isStarted = false;
         }
     }
 }
