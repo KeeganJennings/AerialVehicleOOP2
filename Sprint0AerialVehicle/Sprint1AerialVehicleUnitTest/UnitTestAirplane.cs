@@ -56,5 +56,24 @@ namespace Sprint1AerialVehicleUnitTest
             Assert.AreEqual($"{airplane} cannot take off because it's engine is not started", canTakeOffBefore);
             Assert.AreEqual("", canTakeOffAfter);
         }
+
+        [TestMethod]
+        public void TestAirplaneFlyUpAndDown()
+        {
+            //Arrange
+            airplane = new Airplane();
+
+            //Act
+            int currentAltitudeBefore = airplane.CurrentAltitude;
+            airplane.FlyUp();
+            int currentAltitudeAfterFlyUp = airplane.CurrentAltitude;
+            airplane.FlyDown();
+            int currentAltitudeAfterFlyDown = airplane.CurrentAltitude;
+
+            //Assert
+            Assert.AreEqual(0, currentAltitudeBefore);
+            Assert.AreEqual(1000, currentAltitudeAfterFlyUp);
+            Assert.AreEqual(0, currentAltitudeAfterFlyDown);
+        }
     }
 }

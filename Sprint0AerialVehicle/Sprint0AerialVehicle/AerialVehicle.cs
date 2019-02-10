@@ -56,7 +56,7 @@ namespace Sprint0AerialVehicle
 
         public void FlyDown()
         {
-            if(CurrentAltitude - 1000 > 0)
+            if(CurrentAltitude - 1000 >= 0)
             {
                 CurrentAltitude -= 1000;
             }
