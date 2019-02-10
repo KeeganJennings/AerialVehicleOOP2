@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace Sprint0AerialVehicle
 {
-    abstract class AerialVehicle
+    abstract public class AerialVehicle
     {
-        protected int CurrentAltitude { get; set; }
-        protected int MaxAltitude { get; set; }
-        Engine engine { get; set; }
-        protected bool IsFlying { get; set; }
+        public int CurrentAltitude { get; set; }
+        public int MaxAltitude { get; set; }
+        public Engine engine { get; set; }
+        public bool IsFlying { get; set; }
 
         public string About()
         {
             string aboutString = "";
 
-            aboutString = "This " + this + " has a max altitude of " + MaxAltitude + " ft. \nIt's current altitude is " + CurrentAltitude + " ft. \n";
+            aboutString = "This " + this + " has a max altitude of " + MaxAltitude + " ft.\n It's current altitude is " + CurrentAltitude + " ft.\n ";
 
             if(!engine.isStarted)
             {
@@ -109,7 +109,7 @@ namespace Sprint0AerialVehicle
 
         public AerialVehicle()
         {
-
+            engine = new Engine();
         }
     }
 }

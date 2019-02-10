@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sprint0AerialVehicle
 {
-    class Engine
+    public class Engine
     {
         public bool isStarted;
 

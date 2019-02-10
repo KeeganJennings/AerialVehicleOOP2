@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sprint0AerialVehicle
 {
-    class ToyPlane : Airplane
+    public class ToyPlane : Airplane
     {
         public bool isWoundUp;
 

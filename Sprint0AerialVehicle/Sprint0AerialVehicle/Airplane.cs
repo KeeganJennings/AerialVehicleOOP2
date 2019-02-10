@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Sprint0AerialVehicle
 {
-    class Airplane : AerialVehicle
+    public class Airplane : AerialVehicle
     {
        
         public Airplane()
