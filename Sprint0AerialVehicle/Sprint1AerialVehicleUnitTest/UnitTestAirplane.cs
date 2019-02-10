@@ -75,5 +75,27 @@ namespace Sprint1AerialVehicleUnitTest
             Assert.AreEqual(1000, currentAltitudeAfterFlyUp);
             Assert.AreEqual(0, currentAltitudeAfterFlyDown);
         }
+
+        [TestMethod]
+        public void TestAirplaneFlyUpAndDownHowManyFeet()
+        {
+            //Arrange
+            airplane = new Airplane();
+
+            //Act
+            int currentAltitudeBefore = airplane.CurrentAltitude;
+            airplane.FlyUp(2000);
+            int currentAltitudeAfterFlyUp = airplane.CurrentAltitude;
+            airplane.FlyDown(3000);
+            int currentAltitiudeAfterFlyDown = airplane.CurrentAltitude;
+            airplane.FlyDown(2000);
+            int currentAltitudeAfterFlyDownCorrently = airplane.CurrentAltitude;
+
+            //Assert
+            Assert.AreEqual(0, currentAltitudeBefore);
+            Assert.AreEqual(2000, currentAltitudeAfterFlyUp);
+            Assert.AreEqual(2000, currentAltitiudeAfterFlyDown);
+            Assert.AreEqual(0, currentAltitudeAfterFlyDownCorrently);
+        }
     }
 }
