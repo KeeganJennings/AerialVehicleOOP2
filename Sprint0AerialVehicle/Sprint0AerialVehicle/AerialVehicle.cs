@@ -109,7 +109,7 @@ namespace Sprint0AerialVehicle
 
         public AerialVehicle()
         {
-            engine = new Engine();
+
         }
     }
 }

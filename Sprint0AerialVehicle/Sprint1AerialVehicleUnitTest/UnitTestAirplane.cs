@@ -33,11 +33,11 @@ namespace Sprint1AerialVehicleUnitTest
             //Act
             string engineStatusBefore = airplane.GetEngineStartedString();
             airplane.engine.isStarted = true;
-            string engineStatureAfter = airplane.GetEngineStartedString();
+            string engineStatusAfter = airplane.GetEngineStartedString();
 
             //Assert
             Assert.AreEqual($"{airplane} is no longer flying", engineStatusBefore);
-            Assert.AreEqual($"{airplane} is flying", engineStatureAfter);
+            Assert.AreEqual($"{airplane} is flying", engineStatusAfter);
         }
 
         [TestMethod]
@@ -96,6 +96,34 @@ namespace Sprint1AerialVehicleUnitTest
             Assert.AreEqual(2000, currentAltitudeAfterFlyUp);
             Assert.AreEqual(2000, currentAltitiudeAfterFlyDown);
             Assert.AreEqual(0, currentAltitudeAfterFlyDownCorrently);
+        }
+
+        [TestMethod]
+        public void AirplaneTestStartEngine()
+        {
+            //Arrange
+            airplane = new Airplane();
+
+            //Act
+            airplane.StartEngine();
+
+
+            //Assert
+            Assert.AreEqual(true, airplane.engine.isStarted);
+        }
+
+        [TestMethod]
+        public void AirplaneTestStopEngine()
+        {
+            //Arrange
+            airplane = new Airplane();
+
+            //Act
+            airplane.StopEngine();
+
+
+            //Assert
+            Assert.AreEqual(false, airplane.engine.isStarted);
         }
     }
 }

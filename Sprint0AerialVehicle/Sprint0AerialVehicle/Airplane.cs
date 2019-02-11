@@ -12,6 +12,7 @@ namespace Sprint0AerialVehicle
         public Airplane()
         {
             MaxAltitude = 41000;
+            engine = new Engine();
         }
     }
 }
