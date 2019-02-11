@@ -59,11 +59,13 @@ namespace Sprint0AerialVehicle
         public void UnWind()
         {
             isWoundUp = false;
+            getWindUpString();
         }
 
         public void WindUp()
         {
             isWoundUp = true;
+            getWindUpString();
         }
     }
 }

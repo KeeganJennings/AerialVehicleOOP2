@@ -119,6 +119,7 @@ namespace Sprint1AerialVehicleUnitTest
             airplane = new Airplane();
 
             //Act
+            airplane.engine.isStarted = true;
             airplane.StopEngine();
 
 
