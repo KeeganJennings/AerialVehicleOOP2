@@ -15,3 +15,5 @@ C:\Users\Keegan Jennings\Documents\GitHub\AerialVehicleOOP2\Sprint0AerialVehicle
 C:\Users\Keegan Jennings\Documents\GitHub\AerialVehicleOOP2\Sprint0AerialVehicle\Sprint1AerialVehicleUnitTest\obj\Debug\Sprint1AerialVehicleUnitTest.csproj.CopyComplete
 C:\Users\Keegan Jennings\Documents\GitHub\AerialVehicleOOP2\Sprint0AerialVehicle\Sprint1AerialVehicleUnitTest\obj\Debug\Sprint1AerialVehicleUnitTest.dll
 C:\Users\Keegan Jennings\Documents\GitHub\AerialVehicleOOP2\Sprint0AerialVehicle\Sprint1AerialVehicleUnitTest\obj\Debug\Sprint1AerialVehicleUnitTest.pdb
+C:\Users\Keegan Jennings\Documents\GitHub\AerialVehicleOOP2\Sprint0AerialVehicle\Sprint1AerialVehicleUnitTest\bin\Debug\Sprint1AerialVehicleUnitTest.dll.CodeAnalysisLog.xml
+C:\Users\Keegan Jennings\Documents\GitHub\AerialVehicleOOP2\Sprint0AerialVehicle\Sprint1AerialVehicleUnitTest\bin\Debug\Sprint1AerialVehicleUnitTest.dll.lastcodeanalysissucceeded
