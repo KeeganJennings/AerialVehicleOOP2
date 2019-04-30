@@ -54,7 +54,7 @@ namespace Sprint0AerialVehicle
             return returnTakeOff;
         }
 
-        public void FlyDown()
+        public virtual void FlyDown()
         {
             if(CurrentAltitude - 1000 >= 0)
             {
@@ -74,7 +74,7 @@ namespace Sprint0AerialVehicle
             }
         }
 
-        public void FlyUp()
+        public virtual void FlyUp()
         {
             if(CurrentAltitude + 1000 < 41000)
             {
